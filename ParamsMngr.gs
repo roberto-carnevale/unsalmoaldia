@@ -37,7 +37,7 @@ function getFacebookLikes() {
 }
 
 function getAllUsers() {
-  return getTelegramSubcribers()+getFacebookLikes()+getTwitterFollowers();
+  return readParams().getRange("B16").getValue();
 }
 
 function getLiturgicDay() {
@@ -54,6 +54,10 @@ function getDayFull() {
 
 function getWeekMsg () {
   return readParams().getRange("B10").getValue();
+}
+
+function getWeekMsgES () {
+  return readParams().getRange("B17").getValue();
 }
 
 //compietaMsg

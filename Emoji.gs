@@ -27,12 +27,12 @@ const dayColor= {
 }
 
 const stringColorMailingList= {
-  G:"Oggi paramenti verdi",
-  V:"Oggi paramenti viola",
-  W:"Oggi paramenti bianchi",
-  R:"Oggi paramenti rossi",
-  S:"Oggi paramenti rosa",
-  B:"Oggi paramenti neri",
-  A:"Oggi preghiera Mariana",
-  X:"Giornata aliturgica"
+  G:"Hoy vestidura verde",
+  V:"Hoy vestidura púrpura",
+  W:"Hoy vestidura blanca",
+  R:"Hoy vestidura roja",
+  S:"Hoy vestidura rosa",
+  B:"Hoy vestidura negra",
+  A:"Oración Mariana",
+  X:"Giornata alitúrgica"
 }
