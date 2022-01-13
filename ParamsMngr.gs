@@ -48,8 +48,8 @@ function lastVerseFull() {
   return readParams().getRange("B8").getValue();
 }
 //dayFull
-function getDayFull() {
-  return readParams().getRange("B9").getValue();
+function getDayFullES() {
+  return readParams().getRange("B18").getValue();
 }
 
 function getWeekMsg () {

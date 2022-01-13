@@ -11,8 +11,8 @@ function getLikes() {
 
 function sendVersettoFBwithPicture() {
   let dayObj = getLiturgicDay();
-  let htmlVerse = "\n\n"+dayColor[dayObj.color]+"  "+stringColorMailingList[dayObj.color]+ "  " +dayColor[dayObj.color]+"\n";// + getDayFull().toString().replace(/###/g,"\n");
-  htmlVerse += "#Oremos\n"+lastVerseFullES().toString().replace(/###/g,"\n");
+  let htmlVerse = "\n\n"+dayColor[dayObj.color]+"  "+stringColorMailingList[dayObj.color]+ "  " +dayColor[dayObj.color]+"\n" + getDayFullES().toString().replace(/###/g,"\n");
+  htmlVerse += "\n\n#Oremos\n"+lastVerseFullES().toString().replace(/###/g,"\n");
   
 
   //image treatment
@@ -43,7 +43,7 @@ function sendUserCount() {
     let file = DriveApp.getFolderById(ImageFolder).getFilesByName("candele.jpg").next().getBlob();
     
     getLikes();
-    result = postMessagewithFeelingAndPicture(messagge, file, "joyful");
+    result = postMessagewithFeelingAndPicture(messagge, file, "feeling-joyful");
     Logger.log(result);
   }
   catch (err) {
